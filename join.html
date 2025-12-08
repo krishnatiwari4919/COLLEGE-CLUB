@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join | Code Kings Club</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <a href="index.html" class="logo">Coder Kings </a>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="join.html">Join</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1>Join the Coder Kings Club</h1>
+        <p>Fill out the form below to become a member and start receiving updates on our activities.</p>
+        
+        <form action="/submit-join-form" method="POST" class="join-form">
+            <div>
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required> </div>
+            
+            <div>
+                <label for="email">College Email:</label>
+                <input type="email" id="email" name="email" required> </div>
+
+            <div>
+                <label for="branch">Branch/Department:</label>
+                <select id="branch" name="branch" required> <option value="" disabled selected>Select your branch</option>
+                    <option value="cs">Computer Science</option>
+                    <option value="it">Information Technology</option>
+                    <option value="ec">Electronics & Communication</option>
+                    <option value="me">Mechanical Engineering</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="year">Academic Year:</label>
+                <select id="year" name="year" required> <option value="" disabled selected>Select your year</option>
+                    <option value="1">First Year</option>
+                    <option value="2">Second Year</option>
+                    <option value="3">Third Year</option>
+                    <option value="4">Fourth Year</option>
+                </select>
+            </div>
+            
+            <div>
+                <button type="submit">Submit and Join Club [cite: 49]</button>
+            </div>
+        </form>
+    </div>
+    
+</body>
+</html>

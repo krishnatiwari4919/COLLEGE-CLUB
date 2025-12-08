@@ -1,0 +1,144 @@
+/*
+ * File: style.css
+ * Description: Enhanced, creative, and beautiful CSS for the College Club Website.
+ * Features: Modern typography, shadow effects, smooth transitions, and distinct layout demos.
+ */
+
+/* --- 1. Typography & Global Reset --- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+:root {
+    --primary-color: #d8111e; /* Deep Blue */
+    --secondary-color: #1e7e34; /* Green (for success/join) */
+    --background-light: #f7f9fc;
+    --background-white: #ffffff;
+    --text-dark: #333333;
+    --shadow-light: 0 4px 12px rgba(0, 0, 0, 0.08);
+    --border-radius: 8px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--background-light);
+    color: var(--text-dark);
+    line-height: 1.6;
+}
+
+.container {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+/* --- 2. Navigation Bar (Stylish & Consistent) --- */
+
+.navbar {
+    background-color: var(--primary-color);
+    padding: 18px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+}
+
+.navbar .logo {
+    font-size: 1.8em;
+    font-weight: 600;
+    color: var(--background-white);
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbar ul li {
+    margin-left: 30px;
+}
+
+.navbar ul li a {
+    color: var(--background-white);
+    text-decoration: none;
+    padding: 8px 15px;
+    transition: background-color 0.3s, border-radius 0.3s;
+    font-weight: 400;
+}
+
+.navbar ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 4px;
+}
+
+/* --- 3. Home Page Specific Styling --- */
+
+.hero-section {
+    text-align: center;
+    padding: 80px 20px;
+    background: linear-gradient(135deg, var(--primary-color), #4a90e2);
+    color: white;
+    border-radius: var(--border-radius);
+    margin-top: 20px;
+    box-shadow: var(--shadow-light);
+}
+
+.hero-section h1 {
+    color: white;
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.hero-section p {
+    font-size: 1.2em;
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #1a6d2b;
+}
+
+/* --- 4. About Page (Float & Card Styling) --- */
+
+.about-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.about-content {
+    background-color: var(--background-white)
+}
+/* In css/style.css */
+
+.about-content {
+    /* Current stylish background color: var(--background-white) which is #ffffff */
+    background-color: #1471c2; /* Example: Change to a very light blue */
+    padding: 30px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-light);
+    margin-bottom: 40px;
+}
